@@ -1,0 +1,24 @@
+import array
+def arrayFun():
+    arr1=array.array('I',[1,2,8,9,4,1,3])#creating unsigned array;**ERROR WHEN WE INSERT SIGNED VALUE
+    for i in range(0,7):
+      print(arr1[i],end=" ")#for space we r using end
+    li=[2,8,9,7]  
+    print("\r") #print in next line
+   
+    print("appending list l1 to arr1")  
+    arr1.fromlist(li)#appending list at the end of array
+    for i in range(0,11):
+      print(arr1[i],end=" ")#for space we r using end
+
+    #li.fromlist(arr1)***Error ***can not append array at the end of the list
+    l2=arr1.tolist()#transform an array into list
+    for i in range(0,len(l2)):
+      print(l2[i],end=" ")#for space we r using end
+
+arrayFun();
+
+      
+      
+      
+    
