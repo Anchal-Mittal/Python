@@ -6,7 +6,7 @@ def checkLeap(year):
 
 		leap = True
 
-	elif ((year%100)==0 and (year%400==0)):
+	elif ((year%100=0)&&(year%400==0)):
 
 		leap = True
 
@@ -14,9 +14,7 @@ def checkLeap(year):
 
 		leap = False
 
-	return leapvv
-
-
+	return leap
 
 def main():
 
